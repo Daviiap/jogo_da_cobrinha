@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1b1f2a;
+  color: #e8eaf0;
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  margin: 0 0 12px;
+}
+
+.placar {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.tela {
+  position: relative;
+}
+
+canvas {
+  display: block;
+  background: #11141c;
+  border: 3px solid #3a4258;
+  border-radius: 8px;
+  max-width: 90vw;
+}
+
+.mensagem {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.mensagem.escondida {
+  display: none;
+}
+
+.dica {
+  color: #8a92a8;
+  font-size: 14px;
+}
